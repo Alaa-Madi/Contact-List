@@ -1,0 +1,29 @@
+[
+  {
+    "id": "1748991368818",
+    "name": "sara mohammad",
+    "company": "solution",
+    "email": "saramohammad@gmail.com",
+    "phone": "58621485",
+    "country": "Palestinian Authority",
+    "status": "Active"
+  },
+  {
+    "id": "1748992104241",
+    "name": "lara samara",
+    "company": "asal",
+    "email": "larasamara@gmail.com",
+    "phone": "0568544795",
+    "country": "Palestinian Authority",
+    "status": "Active"
+  },
+  {
+    "id": "1748992416249",
+    "name": "tala",
+    "company": "student",
+    "email": "talaadnan@gmail.com",
+    "phone": "0568544795",
+    "country": "Palestinian Authority",
+    "status": "Inactive"
+  }
+]
