@@ -2,13 +2,11 @@ const fs = require('fs');
 const path = require('path');
 const filePath = path.join(__dirname, '../data/contacts.json');
 
-// قراءة البيانات
 const getContacts = (req, res) => {
   const data = JSON.parse(fs.readFileSync(filePath));
   res.json(data);
 };
 
-// إضافة جهة اتصال
 const createContact = (req, res) => {
   const data = JSON.parse(fs.readFileSync(filePath));
   const newContact = { id: Date.now().toString(), ...req.body };
@@ -17,7 +15,6 @@ const createContact = (req, res) => {
   res.status(201).json(newContact);
 };
 
-// تعديل جهة اتصال
 const updateContact = (req, res) => {
   const { id } = req.params;
   const updatedData = req.body;
@@ -33,7 +30,6 @@ const updateContact = (req, res) => {
   res.json(data[index]);
 };
 
-// حذف جهة اتصال
 const deleteContact = (req, res) => {
   const { id } = req.params;
   let data = JSON.parse(fs.readFileSync(filePath));
